@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BaggageModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="OSUSR_UUK_BAGINTEG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NUMBER" Type="nvarchar" MaxLength="13" />
+    <Property Name="ISRUSH" Type="nvarchar" MaxLength="1" />
+    <Property Name="ISEAT" Type="nvarchar" MaxLength="3" />
+    <Property Name="IAUT" Type="nvarchar" MaxLength="1" />
+    <Property Name="IFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDATE" Type="datetime" />
+    <Property Name="IORIGIN" Type="nvarchar" MaxLength="3" />
+    <Property Name="BPMIN" Type="nvarchar" MaxLength="1" />
+    <Property Name="BSMBOARDI" Type="nvarchar" MaxLength="1" />
+    <Property Name="IATD" Type="datetime" />
+    <Property Name="IFFP" Type="nvarchar" MaxLength="1" />
+    <Property Name="FSEAT" Type="nvarchar" MaxLength="3" />
+    <Property Name="FAUT" Type="nvarchar" MaxLength="1" />
+    <Property Name="BPMHUB" Type="nvarchar" MaxLength="1" />
+    <Property Name="BSMBOARD" Type="nvarchar" MaxLength="1" />
+    <Property Name="FFLTNR" Type="nvarchar" MaxLength="8" />
+    <Property Name="FDATE" Type="datetime" />
+    <Property Name="FDEST" Type="nvarchar" MaxLength="3" />
+    <Property Name="FATD" Type="datetime" />
+    <Property Name="OFFP" Type="nvarchar" MaxLength="1" />
+    <Property Name="TIMESTAMP" Type="datetime" />
+    <Property Name="CLOSE" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_BAGMSGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SMI" Type="nvarchar" MaxLength="3" />
+    <Property Name="SLMI" Type="nvarchar" MaxLength="3" />
+    <Property Name="STATUSINDICATOR" Type="nvarchar" MaxLength="3" />
+    <Property Name="BIRREG" Type="nvarchar" MaxLength="3" />
+    <Property Name="CCORP" Type="nvarchar" MaxLength="21" />
+    <Property Name="DREMOTELOC" Type="nvarchar" MaxLength="4" />
+    <Property Name="EEXCEP" Type="nvarchar" MaxLength="4" />
+    <Property Name="FFLTNR" Type="nvarchar" MaxLength="8" />
+    <Property Name="FDATE" Type="datetime" />
+    <Property Name="FDEST" Type="nvarchar" MaxLength="3" />
+    <Property Name="FCLASS" Type="nvarchar" MaxLength="1" />
+    <Property Name="HHANDTERM" Type="nvarchar" MaxLength="6" />
+    <Property Name="HHANDBAY" Type="nvarchar" MaxLength="6" />
+    <Property Name="HHANDSTDGTE" Type="nvarchar" MaxLength="16" />
+    <Property Name="IFLTNR" Type="nvarchar" MaxLength="8" />
+    <Property Name="IDATE" Type="datetime" />
+    <Property Name="IORIGIN" Type="nvarchar" MaxLength="3" />
+    <Property Name="ICLASS" Type="nvarchar" MaxLength="1" />
+    <Property Name="JRECO" Type="nvarchar" MaxLength="1" />
+    <Property Name="JAGENTID" Type="nvarchar" MaxLength="9" />
+    <Property Name="JSCANID" Type="nvarchar" MaxLength="8" />
+    <Property Name="JREADLOC" Type="nvarchar" MaxLength="8" />
+    <Property Name="JSENTLOC" Type="nvarchar" MaxLength="8" />
+    <Property Name="KDMP" Type="nvarchar" MaxLength="11" />
+    <Property Name="LPNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="NBAGTAG" Type="nvarchar" MaxLength="13" />
+    <Property Name="NNRTAGS" Type="nvarchar" MaxLength="3" />
+    <Property Name="OFLTNR" Type="nvarchar" MaxLength="8" />
+    <Property Name="ODATE" Type="datetime" />
+    <Property Name="ODEST" Type="nvarchar" MaxLength="3" />
+    <Property Name="OCLASS" Type="nvarchar" MaxLength="1" />
+    <Property Name="PPAXNAME" Type="nvarchar" MaxLength="64" />
+    <Property Name="RINTERNAL" Type="nvarchar" MaxLength="64" />
+    <Property Name="SAUTL" Type="nvarchar" MaxLength="1" />
+    <Property Name="SSEAT" Type="nvarchar" MaxLength="3" />
+    <Property Name="SPAXCK" Type="nvarchar" MaxLength="1" />
+    <Property Name="SPAXPROF" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAUTTRANS" Type="nvarchar" MaxLength="1" />
+    <Property Name="SBAGTAGSTATUS" Type="nvarchar" MaxLength="1" />
+    <Property Name="TTAGPRINTERID" Type="nvarchar" MaxLength="12" />
+    <Property Name="UULD" Type="nvarchar" MaxLength="11" />
+    <Property Name="UCOMPT" Type="nvarchar" MaxLength="5" />
+    <Property Name="UTYPEOFBAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="UDESTCONTAINER" Type="nvarchar" MaxLength="3" />
+    <Property Name="UCONTTYPE" Type="nvarchar" MaxLength="8" />
+    <Property Name="VBAGSOURCIND" Type="nvarchar" MaxLength="1" />
+    <Property Name="VCITY" Type="nvarchar" MaxLength="3" />
+    <Property Name="WPWINDICATOR" Type="nvarchar" MaxLength="1" />
+    <Property Name="WNRCKBAGS" Type="nvarchar" MaxLength="50" />
+    <Property Name="WTOTK" Type="int" />
+    <Property Name="XSECURITY" Type="nvarchar" MaxLength="63" />
+    <Property Name="YFQTV" Type="nvarchar" MaxLength="55" />
+    <Property Name="TIMESTAMP" Type="datetime" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_BAGTIMESREFERENCE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EQUIPTYPEID" Type="int" />
+    <Property Name="BAG" Type="int" />
+    <Property Name="UNLTIME" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="INJTIME" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="DOLLIE_L" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="HULL_L" Type="decimal" Precision="3" Scale="1" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_EQUIPTYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EQUIPTYPE" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_FLT_INFO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OPERATOR" Type="nvarchar" MaxLength="3" />
+    <Property Name="FLT_NR" Type="int" />
+    <Property Name="AC_REGISTRATION" Type="nvarchar" MaxLength="10" />
+    <Property Name="FROM_IATA" Type="nvarchar" MaxLength="3" />
+    <Property Name="TO_IATA" Type="nvarchar" MaxLength="3" />
+    <Property Name="DIV_IATA" Type="nvarchar" MaxLength="3" />
+    <Property Name="STD" Type="datetime" />
+    <Property Name="ETD" Type="datetime" />
+    <Property Name="ATD" Type="datetime" />
+    <Property Name="STA" Type="datetime" />
+    <Property Name="ETA" Type="datetime" />
+    <Property Name="ATA" Type="datetime" />
+    <Property Name="ONBLOCK" Type="datetime" />
+    <Property Name="FROM_TERMINAL" Type="nvarchar" MaxLength="5" />
+    <Property Name="FROM_GATE" Type="nvarchar" MaxLength="10" />
+    <Property Name="FROM_STAND" Type="nvarchar" MaxLength="10" />
+    <Property Name="TO_TERMINAL" Type="nvarchar" MaxLength="5" />
+    <Property Name="TO_STAND" Type="nvarchar" MaxLength="10" />
+    <Property Name="TO_BELT" Type="nvarchar" MaxLength="10" />
+    <Property Name="DOOROPEN" Type="datetime" />
+    <Property Name="DOORCLOSED" Type="datetime" />
+    <Property Name="ASSIGNUSER" Type="int" />
+    <Property Name="ISOTPDISMISS" Type="bit" />
+    <Property Name="CF" Type="nvarchar" MaxLength="1" />
+    <Property Name="DBAGM" Type="nvarchar" MaxLength="1" />
+    <Property Name="DTT" Type="nvarchar" MaxLength="1" />
+    <Property Name="DH2H" Type="nvarchar" MaxLength="1" />
+    <Property Name="ALT" Type="nvarchar" MaxLength="1" />
+    <Property Name="ABAGM" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_H2H">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDATE" Type="datetime" />
+    <Property Name="IFLTINFOID" Type="int" />
+    <Property Name="IORIGIN" Type="nvarchar" MaxLength="3" />
+    <Property Name="ISTAND" Type="nvarchar" MaxLength="5" />
+    <Property Name="IETA" Type="datetime" />
+    <Property Name="IATA" Type="datetime" />
+    <Property Name="HULLOPEN" Type="datetime" />
+    <Property Name="IUNLOAD" Type="decimal" Precision="5" Scale="1" />
+    <Property Name="ITAXI" Type="decimal" Precision="5" Scale="1" />
+    <Property Name="IINJECT" Type="decimal" Precision="5" Scale="1" />
+    <Property Name="ETU" Type="datetime" />
+    <Property Name="INRBAGS" Type="int" />
+    <Property Name="ONTOFLIGHT" Type="nvarchar" MaxLength="10" />
+    <Property Name="HUB" Type="int" />
+    <Property Name="OFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="ODATE" Type="datetime" />
+    <Property Name="OFLTINFOID" Type="int" />
+    <Property Name="OLNRBAGS" Type="int" />
+    <Property Name="OINJECT" Type="decimal" Precision="5" Scale="1" />
+    <Property Name="OTAXI" Type="decimal" Precision="5" Scale="1" />
+    <Property Name="OLOAD" Type="decimal" Precision="5" Scale="1" />
+    <Property Name="ETL" Type="datetime" />
+    <Property Name="ETLU" Type="datetime" />
+    <Property Name="ETD" Type="datetime" />
+    <Property Name="HULLCLOSE" Type="datetime" />
+    <Property Name="ATD" Type="datetime" />
+    <Property Name="STANDD" Type="nvarchar" MaxLength="5" />
+    <Property Name="CR" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PAXMSGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDATE" Type="datetime" />
+    <Property Name="IORIGIN" Type="nvarchar" MaxLength="3" />
+    <Property Name="OFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="ODATE" Type="datetime" />
+    <Property Name="ODEST" Type="nvarchar" MaxLength="3" />
+    <Property Name="FIRST" Type="int" />
+    <Property Name="BUSINESS" Type="int" />
+    <Property Name="ECONOMY" Type="int" />
+    <Property Name="INF" Type="int" />
+    <Property Name="CHD" Type="int" />
+    <Property Name="RESERVATIONSTATUS" Type="nvarchar" MaxLength="2" />
+    <Property Name="TIMESTAMP" Type="datetime" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PTM_H2H">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="IDATE" Type="datetime" />
+    <Property Name="IFLTINFOID" Type="int" />
+    <Property Name="IORIGIN" Type="nvarchar" MaxLength="3" />
+    <Property Name="STAND" Type="nvarchar" MaxLength="5" />
+    <Property Name="ETA" Type="datetime" />
+    <Property Name="SEC" Type="int" />
+    <Property Name="HUB" Type="int" />
+    <Property Name="ETCG" Type="datetime" />
+    <Property Name="ETG" Type="datetime" />
+    <Property Name="ETGU" Type="datetime" />
+    <Property Name="OFLTNR" Type="nvarchar" MaxLength="10" />
+    <Property Name="ODATE" Type="datetime" />
+    <Property Name="OFLTINFOID" Type="int" />
+    <Property Name="ODEST" Type="nvarchar" MaxLength="3" />
+    <Property Name="GATE" Type="nvarchar" MaxLength="5" />
+    <Property Name="ETD" Type="datetime" />
+    <Property Name="ECONOMY" Type="int" />
+    <Property Name="BUSINESS" Type="int" />
+    <Property Name="FIRST" Type="int" />
+    <Property Name="STATUS" Type="nvarchar" MaxLength="3" />
+    <Property Name="DEP" Type="nvarchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PTM_REF_SEC_TIME">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WEEK" Type="nvarchar" MaxLength="10" />
+    <Property Name="FROM_TIME" Type="datetime" />
+    <Property Name="TO_TIME" Type="datetime" />
+    <Property Name="TIME" Type="int" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PTMREFS2G">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="STAND" Type="nvarchar" MaxLength="5" />
+    <Property Name="SEC" Type="nvarchar" MaxLength="3" />
+    <Property Name="GATE" Type="nvarchar" MaxLength="5" />
+    <Property Name="MINUTES" Type="int" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_REGISTRATIONS">
+    <Key>
+      <PropertyRef Name="ACREGISTRATION" />
+    </Key>
+    <Property Name="ACREGISTRATION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EQUIPTYPEID" Type="int" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_RULES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LTYELLOW" Type="int" />
+    <Property Name="LTRED" Type="int" />
+    <Property Name="ARRIVBAGMAVG" Type="int" />
+    <Property Name="OTPYELLOW" Type="int" />
+    <Property Name="MCT" Type="int" />
+    <Property Name="CFYELLOW" Type="int" />
+    <Property Name="CFRED" Type="int" />
+    <Property Name="DEPBAGMLIMITE" Type="int" />
+    <Property Name="DEPBAGMRED" Type="int" />
+    <Property Name="PTYELLOW" Type="int" />
+    <Property Name="PTRED" Type="int" />
+    <Property Name="H2HYELLOW" Type="int" />
+    <Property Name="H2HRED" Type="int" />
+    <Property Name="DOORCLOSEALERT" Type="int" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_TAXITIMES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FROM" Type="nvarchar" MaxLength="10" />
+    <Property Name="STANDTYPEID" Type="int" />
+    <Property Name="TO" Type="nvarchar" MaxLength="10" />
+    <Property Name="TAXITIME" Type="int" />
+  </EntityType>
+  <EntityContainer Name="BaggageModelStoreContainer">
+    <EntitySet Name="OSUSR_UUK_BAGINTEG" EntityType="Self.OSUSR_UUK_BAGINTEG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_BAGMSGS" EntityType="Self.OSUSR_UUK_BAGMSGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_BAGTIMESREFERENCE" EntityType="Self.OSUSR_UUK_BAGTIMESREFERENCE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_EQUIPTYPE" EntityType="Self.OSUSR_UUK_EQUIPTYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_FLT_INFO" EntityType="Self.OSUSR_UUK_FLT_INFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_H2H" EntityType="Self.OSUSR_UUK_H2H" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_PAXMSGS" EntityType="Self.OSUSR_UUK_PAXMSGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_PTM_H2H" EntityType="Self.OSUSR_UUK_PTM_H2H" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_PTM_REF_SEC_TIME" EntityType="Self.OSUSR_UUK_PTM_REF_SEC_TIME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_PTMREFS2G" EntityType="Self.OSUSR_UUK_PTMREFS2G" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_REGISTRATIONS" EntityType="Self.OSUSR_UUK_REGISTRATIONS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_RULES" EntityType="Self.OSUSR_UUK_RULES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OSUSR_UUK_TAXITIMES" EntityType="Self.OSUSR_UUK_TAXITIMES" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

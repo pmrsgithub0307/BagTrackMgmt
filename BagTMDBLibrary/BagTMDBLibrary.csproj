@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+   <EnableDefaultItems>false</EnableDefaultItems>
+   <ApplicationIcon />
+   <Win32Resource /> 
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\App.config" Link="App.config" />
+    <None Include="Baggage.edmx" />
+    <EmbeddedResource Include="Resources\Baggage.csdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Baggage.ssdl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Baggage.msl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.1.3" />
+    <PackageReference Include="Microsoft.NETCore.Targets.NETFramework" Version="4.6.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Baggage.Context.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Baggage.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baggage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TableException.cs" />
+    <Compile Include="IPTMTTYTable.cs" />
+    <Compile Include="PTMTTYTable.cs" />
+    <Compile Include="OSUSR_UUK_BAGMSGS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_BAGINTEG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_FLT_INFO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_H2H.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_BAGTIMESREFERENCE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_EQUIPTYPE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_RULES.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_TAXITIMES.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_PAXMSGS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_PTM_H2H.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_PTM_REF_SEC_TIME.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_PTMREFS2G.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OSUSR_UUK_REGISTRATIONS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baggage.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaggageTTYTable.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="IBaggageTTYTable.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="Baggage.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Baggage.edmx</DependentUpon>
+      <LastGenOutput>Baggage.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Baggage.edmx.diagram">
+      <DependentUpon>Baggage.edmx</DependentUpon>
+    </None>
+    <None Include="Baggage.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Baggage.edmx</DependentUpon>
+      <LastGenOutput>Baggage.cs</LastGenOutput>
+    </None>
+    <None Include="NewBagTMModel.edmx" />
+    <None Include="NewBagTMModel.edmx.diagram" />
+</ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BagTMCommon\BagTMCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  
+</Project>

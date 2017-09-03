@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BaggageModelStoreContainer" CdmEntityContainer="NewBagTMEntities">
+    <EntitySetMapping Name="OSUSR_UUK_BAGINTEG">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_BAGINTEG">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_BAGINTEG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+          <ScalarProperty Name="ISRUSH" ColumnName="ISRUSH" />
+          <ScalarProperty Name="ISEAT" ColumnName="ISEAT" />
+          <ScalarProperty Name="IAUT" ColumnName="IAUT" />
+          <ScalarProperty Name="IFLTNR" ColumnName="IFLTNR" />
+          <ScalarProperty Name="IDATE" ColumnName="IDATE" />
+          <ScalarProperty Name="IORIGIN" ColumnName="IORIGIN" />
+          <ScalarProperty Name="BPMIN" ColumnName="BPMIN" />
+          <ScalarProperty Name="BSMBOARDI" ColumnName="BSMBOARDI" />
+          <ScalarProperty Name="IATD" ColumnName="IATD" />
+          <ScalarProperty Name="IFFP" ColumnName="IFFP" />
+          <ScalarProperty Name="FSEAT" ColumnName="FSEAT" />
+          <ScalarProperty Name="FAUT" ColumnName="FAUT" />
+          <ScalarProperty Name="BPMHUB" ColumnName="BPMHUB" />
+          <ScalarProperty Name="BSMBOARD" ColumnName="BSMBOARD" />
+          <ScalarProperty Name="FFLTNR" ColumnName="FFLTNR" />
+          <ScalarProperty Name="FDATE" ColumnName="FDATE" />
+          <ScalarProperty Name="FDEST" ColumnName="FDEST" />
+          <ScalarProperty Name="FATD" ColumnName="FATD" />
+          <ScalarProperty Name="OFFP" ColumnName="OFFP" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+          <ScalarProperty Name="CLOSE" ColumnName="CLOSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_BAGMSGS">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_BAGMSGS">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_BAGMSGS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SMI" ColumnName="SMI" />
+          <ScalarProperty Name="SLMI" ColumnName="SLMI" />
+          <ScalarProperty Name="STATUSINDICATOR" ColumnName="STATUSINDICATOR" />
+          <ScalarProperty Name="BIRREG" ColumnName="BIRREG" />
+          <ScalarProperty Name="CCORP" ColumnName="CCORP" />
+          <ScalarProperty Name="DREMOTELOC" ColumnName="DREMOTELOC" />
+          <ScalarProperty Name="EEXCEP" ColumnName="EEXCEP" />
+          <ScalarProperty Name="FFLTNR" ColumnName="FFLTNR" />
+          <ScalarProperty Name="FDATE" ColumnName="FDATE" />
+          <ScalarProperty Name="FDEST" ColumnName="FDEST" />
+          <ScalarProperty Name="FCLASS" ColumnName="FCLASS" />
+          <ScalarProperty Name="HHANDTERM" ColumnName="HHANDTERM" />
+          <ScalarProperty Name="HHANDBAY" ColumnName="HHANDBAY" />
+          <ScalarProperty Name="HHANDSTDGTE" ColumnName="HHANDSTDGTE" />
+          <ScalarProperty Name="IFLTNR" ColumnName="IFLTNR" />
+          <ScalarProperty Name="IDATE" ColumnName="IDATE" />
+          <ScalarProperty Name="IORIGIN" ColumnName="IORIGIN" />
+          <ScalarProperty Name="ICLASS" ColumnName="ICLASS" />
+          <ScalarProperty Name="JRECO" ColumnName="JRECO" />
+          <ScalarProperty Name="JAGENTID" ColumnName="JAGENTID" />
+          <ScalarProperty Name="JSCANID" ColumnName="JSCANID" />
+          <ScalarProperty Name="JREADLOC" ColumnName="JREADLOC" />
+          <ScalarProperty Name="JSENTLOC" ColumnName="JSENTLOC" />
+          <ScalarProperty Name="KDMP" ColumnName="KDMP" />
+          <ScalarProperty Name="LPNR" ColumnName="LPNR" />
+          <ScalarProperty Name="NBAGTAG" ColumnName="NBAGTAG" />
+          <ScalarProperty Name="NNRTAGS" ColumnName="NNRTAGS" />
+          <ScalarProperty Name="OFLTNR" ColumnName="OFLTNR" />
+          <ScalarProperty Name="ODATE" ColumnName="ODATE" />
+          <ScalarProperty Name="ODEST" ColumnName="ODEST" />
+          <ScalarProperty Name="OCLASS" ColumnName="OCLASS" />
+          <ScalarProperty Name="PPAXNAME" ColumnName="PPAXNAME" />
+          <ScalarProperty Name="RINTERNAL" ColumnName="RINTERNAL" />
+          <ScalarProperty Name="SAUTL" ColumnName="SAUTL" />
+          <ScalarProperty Name="SSEAT" ColumnName="SSEAT" />
+          <ScalarProperty Name="SPAXCK" ColumnName="SPAXCK" />
+          <ScalarProperty Name="SPAXPROF" ColumnName="SPAXPROF" />
+          <ScalarProperty Name="SAUTTRANS" ColumnName="SAUTTRANS" />
+          <ScalarProperty Name="SBAGTAGSTATUS" ColumnName="SBAGTAGSTATUS" />
+          <ScalarProperty Name="TTAGPRINTERID" ColumnName="TTAGPRINTERID" />
+          <ScalarProperty Name="UULD" ColumnName="UULD" />
+          <ScalarProperty Name="UCOMPT" ColumnName="UCOMPT" />
+          <ScalarProperty Name="UTYPEOFBAG" ColumnName="UTYPEOFBAG" />
+          <ScalarProperty Name="UDESTCONTAINER" ColumnName="UDESTCONTAINER" />
+          <ScalarProperty Name="UCONTTYPE" ColumnName="UCONTTYPE" />
+          <ScalarProperty Name="VBAGSOURCIND" ColumnName="VBAGSOURCIND" />
+          <ScalarProperty Name="VCITY" ColumnName="VCITY" />
+          <ScalarProperty Name="WPWINDICATOR" ColumnName="WPWINDICATOR" />
+          <ScalarProperty Name="WNRCKBAGS" ColumnName="WNRCKBAGS" />
+          <ScalarProperty Name="WTOTK" ColumnName="WTOTK" />
+          <ScalarProperty Name="XSECURITY" ColumnName="XSECURITY" />
+          <ScalarProperty Name="YFQTV" ColumnName="YFQTV" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_BAGTIMESREFERENCE">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_BAGTIMESREFERENCE">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_BAGTIMESREFERENCE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EQUIPTYPEID" ColumnName="EQUIPTYPEID" />
+          <ScalarProperty Name="BAG" ColumnName="BAG" />
+          <ScalarProperty Name="UNLTIME" ColumnName="UNLTIME" />
+          <ScalarProperty Name="INJTIME" ColumnName="INJTIME" />
+          <ScalarProperty Name="DOLLIE_L" ColumnName="DOLLIE_L" />
+          <ScalarProperty Name="HULL_L" ColumnName="HULL_L" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_EQUIPTYPE">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_EQUIPTYPE">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_EQUIPTYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EQUIPTYPE" ColumnName="EQUIPTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_FLT_INFO">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_FLT_INFO">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_FLT_INFO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OPERATOR" ColumnName="OPERATOR" />
+          <ScalarProperty Name="FLT_NR" ColumnName="FLT_NR" />
+          <ScalarProperty Name="AC_REGISTRATION" ColumnName="AC_REGISTRATION" />
+          <ScalarProperty Name="FROM_IATA" ColumnName="FROM_IATA" />
+          <ScalarProperty Name="TO_IATA" ColumnName="TO_IATA" />
+          <ScalarProperty Name="DIV_IATA" ColumnName="DIV_IATA" />
+          <ScalarProperty Name="STD" ColumnName="STD" />
+          <ScalarProperty Name="ETD" ColumnName="ETD" />
+          <ScalarProperty Name="ATD" ColumnName="ATD" />
+          <ScalarProperty Name="STA" ColumnName="STA" />
+          <ScalarProperty Name="ETA" ColumnName="ETA" />
+          <ScalarProperty Name="ATA" ColumnName="ATA" />
+          <ScalarProperty Name="ONBLOCK" ColumnName="ONBLOCK" />
+          <ScalarProperty Name="FROM_TERMINAL" ColumnName="FROM_TERMINAL" />
+          <ScalarProperty Name="FROM_GATE" ColumnName="FROM_GATE" />
+          <ScalarProperty Name="FROM_STAND" ColumnName="FROM_STAND" />
+          <ScalarProperty Name="TO_TERMINAL" ColumnName="TO_TERMINAL" />
+          <ScalarProperty Name="TO_STAND" ColumnName="TO_STAND" />
+          <ScalarProperty Name="TO_BELT" ColumnName="TO_BELT" />
+          <ScalarProperty Name="DOOROPEN" ColumnName="DOOROPEN" />
+          <ScalarProperty Name="DOORCLOSED" ColumnName="DOORCLOSED" />
+          <ScalarProperty Name="ASSIGNUSER" ColumnName="ASSIGNUSER" />
+          <ScalarProperty Name="ISOTPDISMISS" ColumnName="ISOTPDISMISS" />
+          <ScalarProperty Name="CF" ColumnName="CF" />
+          <ScalarProperty Name="DBAGM" ColumnName="DBAGM" />
+          <ScalarProperty Name="DTT" ColumnName="DTT" />
+          <ScalarProperty Name="DH2H" ColumnName="DH2H" />
+          <ScalarProperty Name="ALT" ColumnName="ALT" />
+          <ScalarProperty Name="ABAGM" ColumnName="ABAGM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_H2H">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_H2H">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_H2H">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IFLTNR" ColumnName="IFLTNR" />
+          <ScalarProperty Name="IDATE" ColumnName="IDATE" />
+          <ScalarProperty Name="IFLTINFOID" ColumnName="IFLTINFOID" />
+          <ScalarProperty Name="IORIGIN" ColumnName="IORIGIN" />
+          <ScalarProperty Name="ISTAND" ColumnName="ISTAND" />
+          <ScalarProperty Name="IETA" ColumnName="IETA" />
+          <ScalarProperty Name="IATA" ColumnName="IATA" />
+          <ScalarProperty Name="HULLOPEN" ColumnName="HULLOPEN" />
+          <ScalarProperty Name="IUNLOAD" ColumnName="IUNLOAD" />
+          <ScalarProperty Name="ITAXI" ColumnName="ITAXI" />
+          <ScalarProperty Name="IINJECT" ColumnName="IINJECT" />
+          <ScalarProperty Name="ETU" ColumnName="ETU" />
+          <ScalarProperty Name="INRBAGS" ColumnName="INRBAGS" />
+          <ScalarProperty Name="ONTOFLIGHT" ColumnName="ONTOFLIGHT" />
+          <ScalarProperty Name="HUB" ColumnName="HUB" />
+          <ScalarProperty Name="OFLTNR" ColumnName="OFLTNR" />
+          <ScalarProperty Name="ODATE" ColumnName="ODATE" />
+          <ScalarProperty Name="OFLTINFOID" ColumnName="OFLTINFOID" />
+          <ScalarProperty Name="OLNRBAGS" ColumnName="OLNRBAGS" />
+          <ScalarProperty Name="OINJECT" ColumnName="OINJECT" />
+          <ScalarProperty Name="OTAXI" ColumnName="OTAXI" />
+          <ScalarProperty Name="OLOAD" ColumnName="OLOAD" />
+          <ScalarProperty Name="ETL" ColumnName="ETL" />
+          <ScalarProperty Name="ETLU" ColumnName="ETLU" />
+          <ScalarProperty Name="ETD" ColumnName="ETD" />
+          <ScalarProperty Name="HULLCLOSE" ColumnName="HULLCLOSE" />
+          <ScalarProperty Name="ATD" ColumnName="ATD" />
+          <ScalarProperty Name="STANDD" ColumnName="STANDD" />
+          <ScalarProperty Name="CR" ColumnName="CR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_PAXMSGS">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_PAXMSGS">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_PAXMSGS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IFLTNR" ColumnName="IFLTNR" />
+          <ScalarProperty Name="IDATE" ColumnName="IDATE" />
+          <ScalarProperty Name="IORIGIN" ColumnName="IORIGIN" />
+          <ScalarProperty Name="OFLTNR" ColumnName="OFLTNR" />
+          <ScalarProperty Name="ODATE" ColumnName="ODATE" />
+          <ScalarProperty Name="ODEST" ColumnName="ODEST" />
+          <ScalarProperty Name="FIRST" ColumnName="FIRST" />
+          <ScalarProperty Name="BUSINESS" ColumnName="BUSINESS" />
+          <ScalarProperty Name="ECONOMY" ColumnName="ECONOMY" />
+          <ScalarProperty Name="INF" ColumnName="INF" />
+          <ScalarProperty Name="CHD" ColumnName="CHD" />
+          <ScalarProperty Name="RESERVATIONSTATUS" ColumnName="RESERVATIONSTATUS" />
+          <ScalarProperty Name="TIMESTAMP" ColumnName="TIMESTAMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_PTM_H2H">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_PTM_H2H">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_PTM_H2H">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IFLTNR" ColumnName="IFLTNR" />
+          <ScalarProperty Name="IDATE" ColumnName="IDATE" />
+          <ScalarProperty Name="IFLTINFOID" ColumnName="IFLTINFOID" />
+          <ScalarProperty Name="IORIGIN" ColumnName="IORIGIN" />
+          <ScalarProperty Name="STAND" ColumnName="STAND" />
+          <ScalarProperty Name="ETA" ColumnName="ETA" />
+          <ScalarProperty Name="SEC" ColumnName="SEC" />
+          <ScalarProperty Name="HUB" ColumnName="HUB" />
+          <ScalarProperty Name="ETCG" ColumnName="ETCG" />
+          <ScalarProperty Name="ETG" ColumnName="ETG" />
+          <ScalarProperty Name="ETGU" ColumnName="ETGU" />
+          <ScalarProperty Name="OFLTNR" ColumnName="OFLTNR" />
+          <ScalarProperty Name="ODATE" ColumnName="ODATE" />
+          <ScalarProperty Name="OFLTINFOID" ColumnName="OFLTINFOID" />
+          <ScalarProperty Name="ODEST" ColumnName="ODEST" />
+          <ScalarProperty Name="GATE" ColumnName="GATE" />
+          <ScalarProperty Name="ETD" ColumnName="ETD" />
+          <ScalarProperty Name="ECONOMY" ColumnName="ECONOMY" />
+          <ScalarProperty Name="BUSINESS" ColumnName="BUSINESS" />
+          <ScalarProperty Name="FIRST" ColumnName="FIRST" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="DEP" ColumnName="DEP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_PTM_REF_SEC_TIME">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_PTM_REF_SEC_TIME">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_PTM_REF_SEC_TIME">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WEEK" ColumnName="WEEK" />
+          <ScalarProperty Name="FROM_TIME" ColumnName="FROM_TIME" />
+          <ScalarProperty Name="TO_TIME" ColumnName="TO_TIME" />
+          <ScalarProperty Name="TIME" ColumnName="TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_PTMREFS2G">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_PTMREFS2G">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_PTMREFS2G">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STAND" ColumnName="STAND" />
+          <ScalarProperty Name="SEC" ColumnName="SEC" />
+          <ScalarProperty Name="GATE" ColumnName="GATE" />
+          <ScalarProperty Name="MINUTES" ColumnName="MINUTES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_REGISTRATIONS">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_REGISTRATIONS">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_REGISTRATIONS">
+          <ScalarProperty Name="ACREGISTRATION" ColumnName="ACREGISTRATION" />
+          <ScalarProperty Name="EQUIPTYPEID" ColumnName="EQUIPTYPEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_RULES">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_RULES">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_RULES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LTYELLOW" ColumnName="LTYELLOW" />
+          <ScalarProperty Name="LTRED" ColumnName="LTRED" />
+          <ScalarProperty Name="ARRIVBAGMAVG" ColumnName="ARRIVBAGMAVG" />
+          <ScalarProperty Name="OTPYELLOW" ColumnName="OTPYELLOW" />
+          <ScalarProperty Name="MCT" ColumnName="MCT" />
+          <ScalarProperty Name="CFYELLOW" ColumnName="CFYELLOW" />
+          <ScalarProperty Name="CFRED" ColumnName="CFRED" />
+          <ScalarProperty Name="DEPBAGMLIMITE" ColumnName="DEPBAGMLIMITE" />
+          <ScalarProperty Name="DEPBAGMRED" ColumnName="DEPBAGMRED" />
+          <ScalarProperty Name="PTYELLOW" ColumnName="PTYELLOW" />
+          <ScalarProperty Name="PTRED" ColumnName="PTRED" />
+          <ScalarProperty Name="H2HYELLOW" ColumnName="H2HYELLOW" />
+          <ScalarProperty Name="H2HRED" ColumnName="H2HRED" />
+          <ScalarProperty Name="DOORCLOSEALERT" ColumnName="DOORCLOSEALERT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OSUSR_UUK_TAXITIMES">
+      <EntityTypeMapping TypeName="BaggageModel.OSUSR_UUK_TAXITIMES">
+        <MappingFragment StoreEntitySet="OSUSR_UUK_TAXITIMES">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FROM" ColumnName="FROM" />
+          <ScalarProperty Name="STANDTYPEID" ColumnName="STANDTYPEID" />
+          <ScalarProperty Name="TO" ColumnName="TO" />
+          <ScalarProperty Name="TAXITIME" ColumnName="TAXITIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BaggageModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="OSUSR_UUK_BAGINTEG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NUMBER" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="ISRUSH" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="ISEAT" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="IAUT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="IFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IDATE" Type="DateTime" />
+    <Property Name="IORIGIN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="BPMIN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BSMBOARDI" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="IATD" Type="DateTime" />
+    <Property Name="IFFP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="FSEAT" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FAUT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BPMHUB" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BSMBOARD" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="FFLTNR" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="FDATE" Type="DateTime" />
+    <Property Name="FDEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FATD" Type="DateTime" />
+    <Property Name="OFFP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="TIMESTAMP" Type="DateTime" />
+    <Property Name="CLOSE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_BAGMSGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SMI" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SLMI" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="STATUSINDICATOR" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="BIRREG" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="CCORP" Type="String" MaxLength="21" FixedLength="false" Unicode="true" />
+    <Property Name="DREMOTELOC" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="EEXCEP" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="FFLTNR" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="FDATE" Type="DateTime" />
+    <Property Name="FDEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FCLASS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="HHANDTERM" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="HHANDBAY" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="HHANDSTDGTE" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="IFLTNR" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="IDATE" Type="DateTime" />
+    <Property Name="IORIGIN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="ICLASS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="JRECO" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="JAGENTID" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+    <Property Name="JSCANID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="JREADLOC" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="JSENTLOC" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="KDMP" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="LPNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NBAGTAG" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="NNRTAGS" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="OFLTNR" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="ODATE" Type="DateTime" />
+    <Property Name="ODEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="OCLASS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="PPAXNAME" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="RINTERNAL" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="SAUTL" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SSEAT" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SPAXCK" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SPAXPROF" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAUTTRANS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SBAGTAGSTATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="TTAGPRINTERID" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="UULD" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="UCOMPT" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="UTYPEOFBAG" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="UDESTCONTAINER" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="UCONTTYPE" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="VBAGSOURCIND" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="VCITY" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="WPWINDICATOR" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="WNRCKBAGS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WTOTK" Type="Int32" />
+    <Property Name="XSECURITY" Type="String" MaxLength="63" FixedLength="false" Unicode="true" />
+    <Property Name="YFQTV" Type="String" MaxLength="55" FixedLength="false" Unicode="true" />
+    <Property Name="TIMESTAMP" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_BAGTIMESREFERENCE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EQUIPTYPEID" Type="Int32" />
+    <Property Name="BAG" Type="Int32" />
+    <Property Name="UNLTIME" Type="Decimal" Precision="3" Scale="1" />
+    <Property Name="INJTIME" Type="Decimal" Precision="3" Scale="1" />
+    <Property Name="DOLLIE_L" Type="Decimal" Precision="3" Scale="1" />
+    <Property Name="HULL_L" Type="Decimal" Precision="3" Scale="1" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_EQUIPTYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EQUIPTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_FLT_INFO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OPERATOR" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FLT_NR" Type="Int32" />
+    <Property Name="AC_REGISTRATION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FROM_IATA" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="TO_IATA" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DIV_IATA" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="STD" Type="DateTime" />
+    <Property Name="ETD" Type="DateTime" />
+    <Property Name="ATD" Type="DateTime" />
+    <Property Name="STA" Type="DateTime" />
+    <Property Name="ETA" Type="DateTime" />
+    <Property Name="ATA" Type="DateTime" />
+    <Property Name="ONBLOCK" Type="DateTime" />
+    <Property Name="FROM_TERMINAL" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="FROM_GATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FROM_STAND" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TO_TERMINAL" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="TO_STAND" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TO_BELT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DOOROPEN" Type="DateTime" />
+    <Property Name="DOORCLOSED" Type="DateTime" />
+    <Property Name="ASSIGNUSER" Type="Int32" />
+    <Property Name="ISOTPDISMISS" Type="Boolean" />
+    <Property Name="CF" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DBAGM" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DTT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DH2H" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="ALT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="ABAGM" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_H2H">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IDATE" Type="DateTime" />
+    <Property Name="IFLTINFOID" Type="Int32" />
+    <Property Name="IORIGIN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="ISTAND" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="IETA" Type="DateTime" />
+    <Property Name="IATA" Type="DateTime" />
+    <Property Name="HULLOPEN" Type="DateTime" />
+    <Property Name="IUNLOAD" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="ITAXI" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="IINJECT" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="ETU" Type="DateTime" />
+    <Property Name="INRBAGS" Type="Int32" />
+    <Property Name="ONTOFLIGHT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="HUB" Type="Int32" />
+    <Property Name="OFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ODATE" Type="DateTime" />
+    <Property Name="OFLTINFOID" Type="Int32" />
+    <Property Name="OLNRBAGS" Type="Int32" />
+    <Property Name="OINJECT" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="OTAXI" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="OLOAD" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="ETL" Type="DateTime" />
+    <Property Name="ETLU" Type="DateTime" />
+    <Property Name="ETD" Type="DateTime" />
+    <Property Name="HULLCLOSE" Type="DateTime" />
+    <Property Name="ATD" Type="DateTime" />
+    <Property Name="STANDD" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="CR" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PAXMSGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IDATE" Type="DateTime" />
+    <Property Name="IORIGIN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="OFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ODATE" Type="DateTime" />
+    <Property Name="ODEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="FIRST" Type="Int32" />
+    <Property Name="BUSINESS" Type="Int32" />
+    <Property Name="ECONOMY" Type="Int32" />
+    <Property Name="INF" Type="Int32" />
+    <Property Name="CHD" Type="Int32" />
+    <Property Name="RESERVATIONSTATUS" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="TIMESTAMP" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PTM_H2H">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IDATE" Type="DateTime" />
+    <Property Name="IFLTINFOID" Type="Int32" />
+    <Property Name="IORIGIN" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="STAND" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="ETA" Type="DateTime" />
+    <Property Name="SEC" Type="Int32" />
+    <Property Name="HUB" Type="Int32" />
+    <Property Name="ETCG" Type="DateTime" />
+    <Property Name="ETG" Type="DateTime" />
+    <Property Name="ETGU" Type="DateTime" />
+    <Property Name="OFLTNR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ODATE" Type="DateTime" />
+    <Property Name="OFLTINFOID" Type="Int32" />
+    <Property Name="ODEST" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="GATE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="ETD" Type="DateTime" />
+    <Property Name="ECONOMY" Type="Int32" />
+    <Property Name="BUSINESS" Type="Int32" />
+    <Property Name="FIRST" Type="Int32" />
+    <Property Name="STATUS" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DEP" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PTM_REF_SEC_TIME">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WEEK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FROM_TIME" Type="DateTime" />
+    <Property Name="TO_TIME" Type="DateTime" />
+    <Property Name="TIME" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_PTMREFS2G">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="STAND" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SEC" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="GATE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="MINUTES" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_REGISTRATIONS">
+    <Key>
+      <PropertyRef Name="ACREGISTRATION" />
+    </Key>
+    <Property Name="ACREGISTRATION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EQUIPTYPEID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_RULES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LTYELLOW" Type="Int32" />
+    <Property Name="LTRED" Type="Int32" />
+    <Property Name="ARRIVBAGMAVG" Type="Int32" />
+    <Property Name="OTPYELLOW" Type="Int32" />
+    <Property Name="MCT" Type="Int32" />
+    <Property Name="CFYELLOW" Type="Int32" />
+    <Property Name="CFRED" Type="Int32" />
+    <Property Name="DEPBAGMLIMITE" Type="Int32" />
+    <Property Name="DEPBAGMRED" Type="Int32" />
+    <Property Name="PTYELLOW" Type="Int32" />
+    <Property Name="PTRED" Type="Int32" />
+    <Property Name="H2HYELLOW" Type="Int32" />
+    <Property Name="H2HRED" Type="Int32" />
+    <Property Name="DOORCLOSEALERT" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OSUSR_UUK_TAXITIMES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FROM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="STANDTYPEID" Type="Int32" />
+    <Property Name="TO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TAXITIME" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="NewBagTMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OSUSR_UUK_BAGINTEG" EntityType="Self.OSUSR_UUK_BAGINTEG" />
+    <EntitySet Name="OSUSR_UUK_BAGMSGS" EntityType="Self.OSUSR_UUK_BAGMSGS" />
+    <EntitySet Name="OSUSR_UUK_BAGTIMESREFERENCE" EntityType="Self.OSUSR_UUK_BAGTIMESREFERENCE" />
+    <EntitySet Name="OSUSR_UUK_EQUIPTYPE" EntityType="Self.OSUSR_UUK_EQUIPTYPE" />
+    <EntitySet Name="OSUSR_UUK_FLT_INFO" EntityType="Self.OSUSR_UUK_FLT_INFO" />
+    <EntitySet Name="OSUSR_UUK_H2H" EntityType="Self.OSUSR_UUK_H2H" />
+    <EntitySet Name="OSUSR_UUK_PAXMSGS" EntityType="Self.OSUSR_UUK_PAXMSGS" />
+    <EntitySet Name="OSUSR_UUK_PTM_H2H" EntityType="Self.OSUSR_UUK_PTM_H2H" />
+    <EntitySet Name="OSUSR_UUK_PTM_REF_SEC_TIME" EntityType="Self.OSUSR_UUK_PTM_REF_SEC_TIME" />
+    <EntitySet Name="OSUSR_UUK_PTMREFS2G" EntityType="Self.OSUSR_UUK_PTMREFS2G" />
+    <EntitySet Name="OSUSR_UUK_REGISTRATIONS" EntityType="Self.OSUSR_UUK_REGISTRATIONS" />
+    <EntitySet Name="OSUSR_UUK_RULES" EntityType="Self.OSUSR_UUK_RULES" />
+    <EntitySet Name="OSUSR_UUK_TAXITIMES" EntityType="Self.OSUSR_UUK_TAXITIMES" />
+  </EntityContainer>
+</Schema>

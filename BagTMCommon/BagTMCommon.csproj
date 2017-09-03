@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\App.config" Link="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.4.6" />
+    <PackageReference Include="WebSphereMqClient" Version="8.0.0.6" />
+  </ItemGroup>
+
+</Project>
